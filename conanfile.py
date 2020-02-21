@@ -23,6 +23,7 @@ class ZlibConan(ConanFile):
     exports_sources = ["CMakeLists.txt", "CMakeLists_minizip.txt", "minizip.patch"]
     generators = "cmake"
     _source_subfolder = "source_subfolder"
+    _source_subfolder = "test_package"
 
     @property
     def _is_msvc(self):
